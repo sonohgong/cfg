@@ -5,29 +5,31 @@
 git submodule init
 
 # Color support
-git submodule add --name "base16-shell" https://github.com/chriskempson/base16-shell.git base16-shell
+./add-vim-plugin.sh "base16-shell" https://github.com/chriskempson/base16-shell.git
 
 # Neovim plugins
 #
 # Colors
-git submodule add --name "base16" https://github.com/chriskempson/base16-vim.git nvim/site/pack/bundle/opt/base16
-git submodule add --name "lualine" https://github.com/hoob3rt/lualine.nvim.git nvim/site/pack/bundle/opt/lualine
-git submodule add --name "devicons" https://github.com/kyazdani42/nvim-web-devicons.git nvim/site/pack/bundle/opt/devicons
+./add-vim-plugin.sh "base16" https://github.com/chriskempson/base16-vim.git
+./add-vim-plugin.sh "lualine" https://github.com/hoob3rt/lualine.nvim.git
+./add-vim-plugin.sh "devicons" https://github.com/kyazdani42/nvim-web-devicons.git
 # Basics
-git submodule add --name "popup" https://github.com/nvim-lua/popup.nvim.git nvim/site/pack/bundle/opt/popup
-git submodule add --name "plenary" https://github.com/nvim-lua/plenary.nvim.git nvim/site/pack/bundle/opt/plenary
-git submodule add --name "telescope" https://github.com/nvim-telescope/telescope.nvim.git nvim/site/pack/bundle/opt/telescope
-git submodule add --name "surround" https://github.com/tpope/vim-surround.git nvim/site/pack/bundle/opt/surround
-git submodule add --name "commentary" https://github.com/tpope/vim-commentary.git nvim/site/pack/bundle/opt/commentary
+./add-vim-plugin.sh "popup" https://github.com/nvim-lua/popup.nvim.git
+./add-vim-plugin.sh "plenary" https://github.com/nvim-lua/plenary.nvim.git
+./add-vim-plugin.sh "telescope" https://github.com/nvim-telescope/telescope.nvim.git
+./add-vim-plugin.sh "surround" https://github.com/tpope/vim-surround.git
+./add-vim-plugin.sh "commentary" https://github.com/tpope/vim-commentary.git
 # Programming languages
-git submodule add --name "lspconfig" https://github.com/neovim/nvim-lspconfig.git nvim/site/pack/bundle/opt/lspconfig
-git submodule add --name "treesitter" https://github.com/nvim-treesitter/nvim-treesitter.git nvim/site/pack/bundle/opt/treesitter
-git submodule add --name "completion" https://github.com/nvim-lua/completion-nvim.git nvim/site/pack/bundle/opt/completion
-git submodule add --name "neoformat" https://github.com/sbdchd/neoformat.git nvim/site/pack/bundle/opt/neoformat
+./add-vim-plugin.sh "lspconfig" https://github.com/neovim/nvim-lspconfig.git
+./add-vim-plugin.sh "treesitter" https://github.com/nvim-treesitter/nvim-treesitter.git
+./add-vim-plugin.sh "neoformat" https://github.com/sbdchd/neoformat.git
 # Web development
-git submodule add --name "graphql" https://github.com/jparise/vim-graphql.git nvim/site/pack/bundle/opt/graphql
-git submodule add --name "jsxpretty" https://github.com/MaxMEllon/vim-jsx-pretty.git nvim/site/pack/bundle/opt/jsxpretty
-git submodule add --name "jsxtypescript" https://github.com/peitalin/vim-jsx-typescript.git nvim/site/pack/bundle/opt/jsxtypescript
-git submodule add --name "typescript" https://github.com/leafgarland/typescript-vim.git nvim/site/pack/bundle/opt/typescript
-git submodule add --name "javascript" https://github.com/pangloss/vim-javascript.git nvim/site/pack/bundle/opt/javascript
-git submodule add --name "styledcomponents" https://github.com/styled-components/vim-styled-components.git nvim/site/pack/bundle/opt/styledcomponents
+./add-vim-plugin.sh "graphql" https://github.com/jparise/vim-graphql.git
+./add-vim-plugin.sh "styledcomponents" https://github.com/styled-components/vim-styled-components.git
+# Completion
+./add-vim-plugin.sh "nvim-cmp" url = https://github.com/hrsh7th/nvim-cmp.git
+./add-vim-plugin.sh "cmp-buffer" url = https://github.com/hrsh7th/cmp-buffer.git
+./add-vim-plugin.sh "cmp-path" url = https://github.com/hrsh7th/cmp-path.git
+./add-vim-plugin.sh "cmp-nvim-lsp" url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+./add-vim-plugin.sh "lspkind-nvim" url = https://github.com/onsails/lspkind-nvim.git
+./add-vim-plugin.sh "cmp-cmdline" url = https://github.com/hrsh7th/cmp-cmdline.git

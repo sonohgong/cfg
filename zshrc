@@ -19,7 +19,7 @@ bindkey '^R' history-incremental-search-backward
 alias ls='ls --color=always'
 alias ll='ls -lFa'
 alias lt='ll -tr'
-alias nv='nvim'
+alias vi='nvim'
 alias m='PAGER=most man'
 alias g='git'
 
@@ -36,6 +36,7 @@ setopt promptsubst
 zstyle ':vcs_info:git:*' formats '%b'
 #PROMPT='[%n@%F{yellow}%m%f %F{blue}%B%1~%b%f %F{green}${vcs_info_msg_0_}%f]%# '
 PROMPT='[%n@%F{yellow}%m%f %F{blue}%16<…<%~%<<%f %F{green}${vcs_info_msg_0_}%f]%# '
+#PROMPT_COMMAND='echo -ne "$(basename ${PWD})"'
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
